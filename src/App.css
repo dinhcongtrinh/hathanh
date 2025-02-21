@@ -1,0 +1,33 @@
+/* Đảm bảo body chiếm toàn bộ màn hình và có khoảng trắng hai bên */
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 60px; /* Điều chỉnh theo chiều cao của navbar */
+  display: flex;
+  justify-content: center; /* Căn giữa nội dung chính */
+  background-color: #fafafa; /* Màu nền tổng thể (khoảng trắng hai bên) */
+}
+
+/* Khung nội dung chính (navbar, content, footer) */
+.App {
+  max-width: 1200px; 
+  margin: auto;
+  width: 100%;       /* Đảm bảo không bị co nhỏ hơn màn hình nhỏ */
+  background-color: #ffffff; /* Màu nền của nội dung chính */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Tùy chọn: thêm đổ bóng nhẹ */
+  background: linear-gradient(200deg, #e6f0de, #60cd45);
+}
+
+/* Khung nội dung chính */
+.navbar, .footer, .content {
+  width: 1200px;
+  background-color: #ffffff; /* Màu nền của navbar, footer, content */
+}
+
+/* Lớp container dùng chung cho navbar, footer và content */
+.navbar .container, .content .container {
+  max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+  margin: 0 auto;    /* Căn giữa nội dung */
+  padding-left: 15px;
+  padding-right: 15px;
+}

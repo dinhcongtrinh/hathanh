@@ -1,0 +1,60 @@
+footer {
+  width: 100vw; /* Chiếm toàn bộ chiều rộng viewport */
+  position: relative;
+  left: 0;
+  right: 0;
+  background-color: #225222;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  min-height: 200px; /* Đặt chiều cao tối thiểu là 200px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer .container {
+max-width: 1200px;
+margin: 0 auto;
+padding-left: 15px;
+padding-right: 15px;
+}
+
+
+.footer-container {
+padding: 1rem;
+background-color: #19400d;
+color: white;
+min-height: 200px; /* Đảm bảo toàn bộ nội dung nằm trong phạm vi 200px */
+}
+
+.footer-content {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center; /* Căn giữa nội dung theo chiều dọc */
+}
+
+
+.footer-column h5 {
+margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+text-align: center;
+margin-top: 1rem;
+}
+
+.footer-logo {
+width: 60px;
+height: 60px;
+}
+
+
+
+@media (max-width: 768px) {
+.footer-content {
+  flex-direction: column;
+  text-align: center;
+}
+}

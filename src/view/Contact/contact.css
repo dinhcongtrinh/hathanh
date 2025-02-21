@@ -1,0 +1,33 @@
+.contact-page {
+  /* Tùy chỉnh padding nếu cần */
+}
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%; /* Tỉ lệ 16:9 */
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Social links */
+.social-links {
+  list-style: none;
+}
+
+.social-links li a {
+  color: #006400; /* Màu mặc định cho icon, có thể thay đổi */
+  transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+  color: #81C784;
+}

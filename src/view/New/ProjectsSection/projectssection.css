@@ -1,0 +1,52 @@
+#projects {
+    background-color: #126027;
+    padding: 60px 20px;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+#projects h4 {
+    font-size: 1.75rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+#projects p {
+    font-size: 1rem;
+    color: #b3b3b3;
+    line-height: 1.6;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col-md-6 {
+    flex: 1 1 calc(50% - 10px);
+    padding: 20px;
+    background-color: #9db872;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(75, 73, 73, 0.2);
+    transition: all 0.3s ease;
+}
+
+.col-md-6:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(29, 159, 74, 0.25);
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        flex: 1 1 100%;
+    }
+}
