@@ -1,6 +1,6 @@
 /* Testimonials Section CSS */
 #testimonials {
-    background-color: #2c3e50;
+    background-color: #73bf55;
     padding: 60px 0;
   }
   
@@ -16,13 +16,13 @@
     color: #f8f9fa;
     padding: 20px;
     border-left: 5px solid #007bff;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(181, 218, 86, 0.2);
     border-radius: 10px;
   }
   
   .blockquote-footer {
     font-size: 1rem;
-    color: #adb5bd;
+    color: #c0ec67;
   }
   
   .carousel-control-prev, .carousel-control-next {

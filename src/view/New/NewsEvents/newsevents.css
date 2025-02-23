@@ -2,7 +2,7 @@
 #news-events {
     padding: 50px 20px;
     background-color: #abd776;
-    color: #fff;
+    color: #d4e64e;
     text-align: center;
   }
   
@@ -28,14 +28,14 @@
   
   #news-events .col-md-6 {
     flex: 1 1 calc(50% - 20px);
-    background-color: #b5eedb;
+    background-color: #e0eac9;
     padding: 20px;
     border-radius: 8px;
     transition: all 0.3s ease;
   }
   
   #news-events .col-md-6:hover {
-    background-color: #98b3b1;
+    background-color: #fdfffc;
     transform: translateY(-5px);
   }
   
@@ -48,7 +48,7 @@
   #news-events p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #f9f7f7;
+    color: #18671f;
   }
   
   /* Responsive cho màn hình nhỏ hơn */

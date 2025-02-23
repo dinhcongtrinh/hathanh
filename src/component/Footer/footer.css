@@ -3,7 +3,7 @@ footer {
   position: relative;
   left: 0;
   right: 0;
-  background-color: #225222;
+  background-color: #42b342;
   color: white;
   padding: 20px 0;
   text-align: center;
@@ -23,7 +23,7 @@ padding-right: 15px;
 
 .footer-container {
 padding: 1rem;
-background-color: #19400d;
+background-color: #29891d;
 color: white;
 min-height: 200px; /* Đảm bảo toàn bộ nội dung nằm trong phạm vi 200px */
 }

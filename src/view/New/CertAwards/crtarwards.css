@@ -1,5 +1,5 @@
 #cert-awards {
-    background-color: #2c3e50; /* Màu nền tối sang trọng */
+    background-color: #ffffff; /* Màu nền tối sang trọng */
     color: #fff; /* Màu chữ trắng */
     padding: 60px 20px;
   }
@@ -14,13 +14,13 @@
   #cert-awards h4 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #ecf0f1; /* Màu chữ nhã nhặn cho tiêu đề phụ */
+    color: #181819; /* Màu chữ nhã nhặn cho tiêu đề phụ */
   }
   
   #cert-awards p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #bdc3c7; /* Màu chữ xám nhạt để dễ đọc hơn */
+    color: #056812; /* Màu chữ xám nhạt để dễ đọc hơn */
   }
   
   #cert-awards .container {
@@ -36,7 +36,7 @@
   
   #cert-awards .col-md-6 {
     flex: 0 0 48%; /* Chiếm 48% chiều rộng để cách nhau một khoảng nhỏ */
-    background-color: rgba(255, 255, 255, 0.1); /* Nền mờ nhẹ cho mỗi phần tử */
+    background-color: rgba(168, 236, 125, 0.829); /* Nền mờ nhẹ cho mỗi phần tử */
     padding: 20px;
     border-radius: 10px;
     transition: all 0.3s ease;
@@ -44,7 +44,7 @@
   
   #cert-awards .col-md-6:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(253, 249, 249, 0.1);
   }
   
   @media (max-width: 768px) {

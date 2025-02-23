@@ -27,10 +27,10 @@ const Navbar = () => {
   return (
     <nav
       className={`navbar navbar-expand-lg w-100 ${showNavbar ? 'show' : 'hide'}`}
-      style={{ backgroundColor: '#254f25', transition: 'top 0.3s' }}
+      style={{ backgroundColor: '#509d46', transition: 'top 0.3s' }}
     >
       <div className="container">
-      <Link className="navbar-brand" to="/">
+      <Link className="navbar-brand" to="/Home">
         <img 
           src={Logo} 
           alt="Company Logo" 

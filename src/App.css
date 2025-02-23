@@ -15,7 +15,7 @@ body {
   width: 100%;       /* Đảm bảo không bị co nhỏ hơn màn hình nhỏ */
   background-color: #ffffff; /* Màu nền của nội dung chính */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Tùy chọn: thêm đổ bóng nhẹ */
-  background: linear-gradient(200deg, #e6f0de, #60cd45);
+  /* background: linear-gradient(200deg, #e6f0de, #60cd45); */
 }
 
 /* Khung nội dung chính */
