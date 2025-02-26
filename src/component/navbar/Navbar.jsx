@@ -1,31 +1,70 @@
-import React, { useEffect, useState, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState, useCallback, useRef } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import Logo from '../../assets/imgs/HathanhLogo.png';
 import './navbar.css';
 
 const Navbar = () => {
-  const [showNavbar, setShowNavbar] = useState(true);
-  const lastScrollY = useRef(0); // Dùng useRef để lưu giá trị cuộn trước đó
+  const [navActive, setNavActive] = useState(false);
+  const [productDropdownOpen, setProductDropdownOpen] = useState(false);
+  const [serviceDropdownOpen, setServiceDropdownOpen] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(false);
+
+
+  const navigate = useNavigate();
+
+  const toggleNav = () => {
+    setNavActive(!navActive);
+  };
+
+  const closeMenu = useCallback(() => {
+    setNavActive(false);
+    setProductDropdownOpen(false);
+    setServiceDropdownOpen(false);
+  }, []);
+
+  const toggleProductDropdown = () => {
+    setProductDropdownOpen(!productDropdownOpen);
+    setServiceDropdownOpen(false); // Close other dropdown
+  };
+
+  const toggleServiceDropdown = () => {
+    setServiceDropdownOpen(!serviceDropdownOpen);
+    setProductDropdownOpen(false); // Close other dropdown
+  };
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > lastScrollY.current) {
-        setShowNavbar(false); // Ẩn navbar khi cuộn xuống
-      } else {
-        setShowNavbar(true); // Hiện navbar khi cuộn lên
+    const handleResize = () => {
+      if (window.innerWidth <= 500) {
+        closeMenu();
       }
-      lastScrollY.current = window.scrollY;
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
+  }, [closeMenu]);
+
+  useEffect(() => {
+    if (window.innerWidth <= 1200) {
+      closeMenu();
+    }
+  }, [closeMenu]);
+
+  useEffect(() => {
+    setShowNavbar(true);
   }, []);
+  
+
+  const handleNavClick = (path) => {
+    navigate(path);
+    closeMenu();
+  };
 
   return (
     <nav
+      
       className={`navbar navbar-expand-lg w-100 ${showNavbar ? 'show' : 'hide'}`}
       style={{ backgroundColor: '#509d46', transition: 'top 0.3s' }}
     >

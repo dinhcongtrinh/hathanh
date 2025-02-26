@@ -1,5 +1,6 @@
+import React, { useEffect } from 'react';
 import Navbar from './component/navbar/Navbar';
-import { Routes, Route } from 'react-router-dom';
+import { useNavigate, Routes, Route } from 'react-router-dom';  // ❌ Xóa Router, chỉ giữ Routes và Route
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Home from './view/Home/home';
@@ -11,6 +12,14 @@ import RegistrationForm from './view/ContactForm/RegistrationForm.jsx';
 import './App.css';
 
 function App() {
+  const navigate = useNavigate();
+
+useEffect(() => {
+  if (window.location.pathname === "/") {
+    navigate("/");
+  }
+}, [navigate]);
+
   return (
     <>
       <div className="App">
@@ -18,10 +27,12 @@ function App() {
         {/* Các thành phần khác của ứng dụng */}
         <main>
           <Routes>
-            <Route path="/Home" element={<Home />} />
-            <Route path="/New" element={<New />} />
-            <Route path="/ContactPage" element={<ContactPage />} />
-            <Route path="/RegistrationForm" element={< RegistrationForm />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/new" element={<New />} />
+            <Route path="/contactpage" element={<ContactPage />} />
+            <Route path="/registrationform" element={<RegistrationForm />} />
+            <Route path="*" element={<Home />} />
           </Routes>
         </main>
       </div>
