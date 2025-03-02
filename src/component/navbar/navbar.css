@@ -43,10 +43,8 @@ body {
 /* Lớp container để căn giữa nội dung navbar */
 
 .navbar .container {
-  max-width: 1000px !important;
+  max-width: 1200px !important;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
   display: flex;
   justify-content: center; /* Căn giữa nội dung navbar */
   align-items: center; 

@@ -19,10 +19,12 @@ body {
 }
 
 /* Khung nội dung chính */
-.navbar, .footer, .content {
+ .content {
   width: 1200px;
   background-color: #ffffff; /* Màu nền của navbar, footer, content */
 }
+
+
 
 /* Lớp container dùng chung cho navbar, footer và content */
 .navbar .container, .content .container {
