@@ -13,10 +13,11 @@ const Home = () => {
   return (
     <div className="home-bg">
     <VideoSection/>
-    <Testimonials />
-    <HeroSection />
-    <CompanyIntro />
     <ProjectsSection />
+    <HeroSection />
+    <Testimonials />
+    <CompanyIntro />
+   
    
   </div>
   );
