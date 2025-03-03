@@ -15,7 +15,7 @@ import './App.css';
 
 function App() {
   return (
-    <>
+    <HashRouter>
       <div className="App">
         <Navbar />
         <main>
@@ -30,7 +30,7 @@ function App() {
         </main>
       </div>
       <Footer />
-    </>
+      </HashRouter>
   );
 }
 
