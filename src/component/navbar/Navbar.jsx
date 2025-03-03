@@ -66,7 +66,7 @@ const Navbar = () => {
     <nav
       
       className={`navbar navbar-expand-lg w-100 ${showNavbar ? 'show' : 'hide'}`}
-      style={{ backgroundColor: '#509d46', transition: 'top 0.3s' }}
+      style={{ backgroundColor: 'rgb(172 233 165)', transition: 'top 0.3s' }}
     >
       <div className="container">
       <Link className="navbar-brand" to="/Home">
@@ -126,6 +126,7 @@ const Navbar = () => {
                 </li>
               </ul>
             </li>
+            
             <li className="nav-item">
               <Link className="nav-link" to="/New">
                 Thông Tin
