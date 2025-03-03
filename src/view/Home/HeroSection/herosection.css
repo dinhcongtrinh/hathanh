@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(135deg, #bcdb91, #79dc74); /* Sáng như giọt sương ban mai */
+    background: linear-gradient(135deg, #f6f7f4); /* Sáng như giọt sương ban mai */
     color: #333;
     overflow: hidden;
 }

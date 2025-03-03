@@ -1,6 +1,6 @@
 /* Testimonials Section CSS */
 #testimonials {
-    background-color: #73bf55;
+    background-color: #f8fcf7;
     padding: 60px 0;
   }
   
@@ -13,16 +13,16 @@
     font-size: 1.2rem;
     line-height: 1.8;
     font-style: italic;
-    color: #f8f9fa;
+    color: #155415;
     padding: 20px;
-    border-left: 5px solid #007bff;
+    border-left: 5px solid #88ff00;
     background-color: rgba(181, 218, 86, 0.2);
     border-radius: 10px;
   }
   
   .blockquote-footer {
     font-size: 1rem;
-    color: #c0ec67;
+    color: #d5f09f;
   }
   
   .carousel-control-prev, .carousel-control-next {
