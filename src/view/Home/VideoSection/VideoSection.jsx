@@ -4,10 +4,13 @@ import './VideoSection.css';
 const VideoSection = () => {
   return (
     <section className="video-section">
-      <video className="video-bg" autoPlay loop muted>
-        <source src="/videos/environment_h264.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+
+           <video className="video-bg" autoPlay loop muted controls>
+       <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+       Your browser does not support the video tag.
+     </video>
+     
+
       <div className="video-overlay">
         <div className="container text-center">
           <h1 className="display-4">Giải pháp tiên tiến cho môi trường</h1>

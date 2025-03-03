@@ -10,7 +10,7 @@ body {
 
 /* Khung nội dung chính (navbar, content, footer) */
 .App {
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: auto;
   width: 100%;       /* Đảm bảo không bị co nhỏ hơn màn hình nhỏ */
   background-color: #ffffff; /* Màu nền của nội dung chính */

@@ -35,7 +35,6 @@ useEffect(() => {
             <Route path="*" element={<Home />} />
           </Routes>
         </main>
-        xx
       </div>
       <Footer />
       {/* Đặt Footer ngoài .App để không bị giới hạn chiều rộng */}

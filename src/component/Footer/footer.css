@@ -24,7 +24,7 @@ min-height: 200px; /* Đảm bảo toàn bộ nội dung nằm trong phạm vi 2
 }
 
 .footer-content {
-  max-width: 1200px !important;
+  /* max-width: 1200px !important; */
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
@@ -36,7 +36,7 @@ align-items: center; /* Căn giữa nội dung theo chiều dọc */
 .footer-column {
   flex: 1;
   min-width: 300px; /* Đảm bảo mỗi cột có kích thước tối thiểu */
-  max-width: 400px; /* Giới hạn kích thước cột để tránh chiếm quá nhiều không gian */
+  max-width: 350px; /* Giới hạn kích thước cột để tránh chiếm quá nhiều không gian */
 }
 
 
