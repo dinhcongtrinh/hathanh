@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './component/navbar/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -12,7 +12,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <HashRouter>
       <div className="App">
         <Navbar />
         <main>
@@ -27,7 +27,7 @@ function App() {
         </main>
       </div>
       <Footer />
-    </Router>
+    </HashRouter>
   );
 }
 
