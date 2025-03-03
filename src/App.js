@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './component/navbar/Navbar';
-import { Routes, Route } from 'react-router-dom';  
+import { HashRouter, Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Home from './view/Home/home';
