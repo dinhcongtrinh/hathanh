@@ -9,6 +9,7 @@ import Footer from './component/Footer/footer';
 import ContactPage from './view/Contact/contact.jsx';
 import RegistrationForm from './view/ContactForm/RegistrationForm.jsx';  
 import '@fortawesome/fontawesome-free/css/all.min.css';
+ 
 
 
 import './App.css';

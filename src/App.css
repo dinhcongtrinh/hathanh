@@ -5,7 +5,7 @@ body {
   padding-top: 60px; /* Điều chỉnh theo chiều cao của navbar */
   display: flex;
   justify-content: center; /* Căn giữa nội dung chính */
-  background-color: #fafafa; /* Màu nền tổng thể (khoảng trắng hai bên) */
+  background-color: #ffffff; /* Màu nền tổng thể (khoảng trắng hai bên) */
 }
 
 /* Khung nội dung chính (navbar, content, footer) */
@@ -14,7 +14,7 @@ body {
   margin: auto;
   width: 100%;       /* Đảm bảo không bị co nhỏ hơn màn hình nhỏ */
   background-color: #ffffff; /* Màu nền của nội dung chính */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Tùy chọn: thêm đổ bóng nhẹ */
+  box-shadow: 0 0 10px rgba(166, 164, 164, 0.2); /* Tùy chọn: thêm đổ bóng nhẹ */
   /* background: linear-gradient(200deg, #e6f0de, #60cd45); */
 }
 

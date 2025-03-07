@@ -1,0 +1,63 @@
+.company-info-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.company-info-container h2 {
+  color: #2c3e50;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.company-info-container p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.company-info-container h3 {
+  margin-top: 20px;
+  font-size: 22px;
+  color: #2980b9;
+}
+
+.company-info-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.company-info-container ul li {
+  background: #ecf0f1;
+  padding: 10px;
+  margin: 5px 0;
+  border-left: 5px solid #b9ea50;
+  font-size: 16px;
+  color: #333;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.company-info-container ul li:hover {
+  background: #b9ea50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.company-info-container p.error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+.company-info-container p.loading {
+  text-align: center;
+  font-weight: bold;
+  color: #16a085;
+}

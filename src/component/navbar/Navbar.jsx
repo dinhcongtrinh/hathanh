@@ -1,14 +1,12 @@
-import React, { useEffect, useState, useCallback, useRef } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Logo from '../../assets/imgs/HathanhLogo.png';
 import './navbar.css';
 
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
-  const [productDropdownOpen, setProductDropdownOpen] = useState(false);
-  const [serviceDropdownOpen, setServiceDropdownOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null); // 'home' hoặc 'products'
   const [showNavbar, setShowNavbar] = useState(false);
-
 
   const navigate = useNavigate();
 
@@ -18,19 +16,8 @@ const Navbar = () => {
 
   const closeMenu = useCallback(() => {
     setNavActive(false);
-    setProductDropdownOpen(false);
-    setServiceDropdownOpen(false);
+    setActiveDropdown(null);
   }, []);
-
-  const toggleProductDropdown = () => {
-    setProductDropdownOpen(!productDropdownOpen);
-    setServiceDropdownOpen(false); // Close other dropdown
-  };
-
-  const toggleServiceDropdown = () => {
-    setServiceDropdownOpen(!serviceDropdownOpen);
-    setProductDropdownOpen(false); // Close other dropdown
-  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -38,12 +25,8 @@ const Navbar = () => {
         closeMenu();
       }
     };
-
     window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    return () => window.removeEventListener("resize", handleResize);
   }, [closeMenu]);
 
   useEffect(() => {
@@ -55,28 +38,30 @@ const Navbar = () => {
   useEffect(() => {
     setShowNavbar(true);
   }, []);
-  
 
   const handleNavClick = (path) => {
     navigate(path);
     closeMenu();
   };
 
+  // Hàm để mở dropdown theo mục (home hoặc products)
+  const handleDropdown = (menu) => {
+    setActiveDropdown(menu);
+  };
+
   return (
     <nav
-      
       className={`navbar navbar-expand-lg w-100 ${showNavbar ? 'show' : 'hide'}`}
       style={{ backgroundColor: 'rgb(172 233 165)', transition: 'top 0.3s' }}
     >
       <div className="container">
-      <Link className="navbar-brand" to="/Home">
-        <img 
-          src={Logo} 
-          alt="Company Logo" 
-          className="logo-navbar d-inline-block align-text-top"
-        />
-      </Link>
-
+        <Link className="navbar-brand" to="/Home" onClick={closeMenu}>
+          <img 
+            src={Logo} 
+            alt="Company Logo" 
+            className="logo-navbar d-inline-block align-text-top"
+          />
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -85,48 +70,80 @@ const Navbar = () => {
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={toggleNav}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link className="nav-link" aria-current="page" to="/Home">
+            {/* Menu "Trang Chủ" với submenu */}
+            <li 
+              className="nav-item dropdown menu-item" 
+              onMouseEnter={() => handleDropdown('home')} 
+              onMouseLeave={() => handleDropdown(null)}
+            >
+              <Link className="nav-link" to="/Home">
                 Trang Chủ
               </Link>
+              {activeDropdown === 'home' && (
+                <ul className="submenu">
+                  <li>
+                    <Link className="submenu-item" to="/home/overview">
+                      Tổng Quan
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="submenu-item" to="/home/company">
+                      Giới Thiệu Công Ty
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="submenu-item" to="/home/leadership">
+                      Ban Lãnh Đạo
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="submenu-item" to="/home/social">
+                      Trách Nhiệm Xã Hội
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="submenu-item" to="/home/economy">
+                      Thúc Đẩy Kinh Tế
+                    </Link>
+                  </li>
+                </ul>
+              )}
             </li>
-            <li className="nav-item dropdown">
-              <Link
-                className="nav-link dropdown-toggle"
-                to="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
+            {/* Menu "Sản Phẩm" với submenu */}
+            <li 
+              className="nav-item dropdown menu-item" 
+              onMouseEnter={() => handleDropdown('products')} 
+              onMouseLeave={() => handleDropdown(null)}
+            >
+              <Link className="nav-link" to="/products">
                 Sản Phẩm
               </Link>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link className="dropdown-item" to="/action">
-                    Thiết bị văn phòng
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/another-action">
-                    Giải pháp tài nguyên môi trường
-                  </Link>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/something-else">
-                    Phát triển công nghệ
-                  </Link>
-                </li>
-              </ul>
+              {activeDropdown === 'products' && (
+                <ul className="submenu">
+                  <li>
+                    <Link className="submenu-item" to="/products/office-equipment">
+                      Thiết bị văn phòng
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="submenu-item" to="/products/environment">
+                      Giải pháp tài nguyên môi trường
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="submenu-item" to="/products/technology">
+                      Phát triển công nghệ
+                    </Link>
+                  </li>
+                </ul>
+              )}
             </li>
-            
             <li className="nav-item">
               <Link className="nav-link" to="/New">
                 Thông Tin
