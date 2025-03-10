@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState, useCallback, useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Logo from '../../assets/imgs/HathanhLogo.png';
 import './navbar.css';
@@ -7,6 +7,9 @@ const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null); // 'home' hoặc 'products'
   const [showNavbar, setShowNavbar] = useState(false);
+  
+  // Sử dụng useRef để lưu trữ timeout ID cho việc ẩn dropdown
+  const hideTimeout = useRef(null);
 
   const navigate = useNavigate();
 
@@ -17,6 +20,10 @@ const Navbar = () => {
   const closeMenu = useCallback(() => {
     setNavActive(false);
     setActiveDropdown(null);
+    if (hideTimeout.current) {
+      clearTimeout(hideTimeout.current);
+      hideTimeout.current = null;
+    }
   }, []);
 
   useEffect(() => {
@@ -44,9 +51,20 @@ const Navbar = () => {
     closeMenu();
   };
 
-  // Hàm để mở dropdown theo mục (home hoặc products)
-  const handleDropdown = (menu) => {
+  // Xử lý khi di chuột vào mục có dropdown, hủy timeout nếu có và hiển thị dropdown
+  const handleMouseEnterDropdown = (menu) => {
+    if (hideTimeout.current) {
+      clearTimeout(hideTimeout.current);
+      hideTimeout.current = null;
+    }
     setActiveDropdown(menu);
+  };
+
+  // Khi di chuột ra, đặt timeout 300ms trước khi ẩn dropdown
+  const handleMouseLeaveDropdown = () => {
+    hideTimeout.current = setTimeout(() => {
+      setActiveDropdown(null);
+    }, 300);
   };
 
   return (
@@ -76,11 +94,11 @@ const Navbar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            {/* Menu "Trang Chủ" với submenu */}
+            {/* Menu "Trang Chủ" với dropdown sử dụng delay */}
             <li 
               className="nav-item dropdown menu-item" 
-              onMouseEnter={() => handleDropdown('home')} 
-              onMouseLeave={() => handleDropdown(null)}
+              onMouseEnter={() => handleMouseEnterDropdown('home')} 
+              onMouseLeave={handleMouseLeaveDropdown}
             >
               <Link className="nav-link" to="/Home">
                 Trang Chủ
@@ -115,11 +133,11 @@ const Navbar = () => {
                 </ul>
               )}
             </li>
-            {/* Menu "Sản Phẩm" với submenu */}
+            {/* Menu "Sản Phẩm" với dropdown sử dụng delay */}
             <li 
               className="nav-item dropdown menu-item" 
-              onMouseEnter={() => handleDropdown('products')} 
-              onMouseLeave={() => handleDropdown(null)}
+              onMouseEnter={() => handleMouseEnterDropdown('products')} 
+              onMouseLeave={handleMouseLeaveDropdown}
             >
               <Link className="nav-link" to="/products">
                 Sản Phẩm

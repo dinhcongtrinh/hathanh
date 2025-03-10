@@ -7,6 +7,7 @@ html, body {
 
 .navbar {
   position: fixed !important; 
+  height: 45px !important;
   top: 0;
   left: 0;
   right: 0;
@@ -84,14 +85,17 @@ body {
 
 /* Đảm bảo container menu-item có vị trí relative */
 .navbar-nav .menu-item {
-  margin: 0 15px;
+  margin: 0 0px;
+  margin-bottom: 0 !important;
   position: relative;
 }
+
+
 
 /* Dropdown submenu được đặt tuyệt đối */
 .submenu {
   position: absolute;
-  top: calc(100% + 30px) !important;/* Hiển thị ngay dưới menu-item */
+  top: 100% !important;
   left: 0;
   background: #fff;
   list-style: none;
@@ -100,7 +104,7 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   opacity: 0 ;
   visibility: hidden ;
-  transition: 0.5sease-in-ou;
+  transition: opacity 0.3s ease;
   transform-origin: 50% 0;
   z-index: 999;
 }
@@ -109,7 +113,7 @@ body {
 
 .menu-item:hover .submenu,
 .submenu.active:hover {
-  top: 100% !important;
+  /* top: 100%; */
   opacity: 1 !important;
   visibility: visible !important;
   transition-delay: 0.5s;
@@ -124,12 +128,20 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+
 .menu-item {
-  padding-bottom: 10px;
+  position: relative;
 }
-/* .menu-item:not(:hover) .submenu {
-  transition-delay: 0.3s;
-} */
+.menu-item::after {
+  content: "";
+  position: absolute;
+  /* bottom: -15px;  */
+  left: 0;
+  right: 0;
+  height: 15px; /* Kéo dài vùng hover xuống 15px */
+  background: transparent;
+  pointer-events: none; /* Không can thiệp sự kiện chuột */
+}
 
 .submenu-item:hover {
   background-color: #f0f0f0;
@@ -139,8 +151,8 @@ body {
 
 
 .logo-navbar {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   object-fit: contain; /* Giữ nguyên tỉ lệ */
   filter: drop-shadow(2px 2px 5px rgba(202, 199, 199, 0.2)); /* Bóng nhẹ */
   transition: transform 0.3s ease-in-out; /* Hiệu ứng hover */
