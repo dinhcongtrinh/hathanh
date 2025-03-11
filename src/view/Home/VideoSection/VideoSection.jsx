@@ -12,7 +12,7 @@ const VideoSection = ({ onShowCompanyInfo }) => {
         Your browser does not support the video tag.
       </video>
       <div className="video-overlay">
-        <div className="container text-center">
+        <div className="video-container text-center">
           <h1 className="display-4">Giải pháp tiên tiến cho môi trường</h1>
           <p className="lead">
             Công nghệ, tài nguyên và môi trường – Đồng hành cùng sự phát triển bền

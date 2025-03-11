@@ -37,15 +37,13 @@ body {
 
 
 @media (max-width: 768px) {
-  .content, .App {
-    padding-left: 10px;
-    padding-right: 10px;
+  .App {
+    padding: 0 12px; /* Tạo khoảng cách nhỏ hơn */
   }
 }
 
 @media (max-width: 480px) {
-  .content, .App {
-    padding-left: 10px;
-    padding-right: 10px;
+  .App {
+    padding: 0 8px; /* Tạo khoảng cách nhỏ nhất */
   }
 }

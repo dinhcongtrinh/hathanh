@@ -7,7 +7,7 @@ html, body {
 
 .navbar {
   position: fixed !important; 
-  height: 45px !important;
+  /* height: 45px !important; */
   top: 0;
   left: 0;
   right: 0;
@@ -238,6 +238,15 @@ body {
     padding-left: 10px;
     padding-right: 10px;
   }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    max-width: 100%;
+    padding-left: 5cap;
+    padding-right: 5px;
+  }
+  
 }
 
 @media (min-width: 1200px) {

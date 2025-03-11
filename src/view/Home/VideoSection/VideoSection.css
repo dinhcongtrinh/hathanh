@@ -67,6 +67,9 @@
   transform: translateY(1px);
 }
 
+
+
+
 @media (max-width: 768px) {
   .video-overlay h1 {
     font-size: 1.8rem;
@@ -79,5 +82,44 @@
   .video-overlay .btn {
     padding: 8px 20px;
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-section {
+    flex-direction: column; /* Chuyển layout về dọc nếu cần */
+    padding: 10px;
+  }
+
+  .video-bg {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .video-container {
+    max-width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .video-overlay {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .video-overlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .video-overlay p {
+    font-size: 0.9rem;
+  }
+
+  .video-overlay .btn {
+    padding: 6px 15px;
+    font-size: 0.8rem;
   }
 }

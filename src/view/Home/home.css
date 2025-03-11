@@ -4,3 +4,9 @@
    min-height: 100vh; 
  }
   */
+
+  @media (max-width:480px) {
+    .home-bg {
+      padding: 0 10px;
+    }
+  }

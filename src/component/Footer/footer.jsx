@@ -14,7 +14,7 @@ const Footer = () => {
 
   return (
     <footer className="footer-container">
-      <div className="container"> {/* Bootstrap container */}
+      <div className="container-fluid"> {/* Bootstrap container */}
         <div className="footer-content row d-flex flex-wrap"> {/* Responsive Bootstrap row */}
           
           <div className="footer-column col-12 col-md-4">
