@@ -17,7 +17,6 @@ const CompanyPolicy = () => {
               Điều kiện đổi trả: Sản phẩm còn nguyên vẹn, không bị hư hỏng do lỗi người sử dụng.</p>
           <p>Chính sách đổi trả
 
-            Khách hàng có thể đổi trả sản phẩm trong vòng 7 ngày nếu có lỗi từ nhà sản xuất.
 
              Điều kiện đổi trả: Sản phẩm còn nguyên vẹn, không bị hư hỏng do lỗi người sử dụng.</p>   
            <p> Chính sách hỗ trợ kỹ thuật
@@ -248,7 +247,7 @@ const CompanyPolicy = () => {
 
         {/* Quy định công ty */}
         <TabPane tab="Quy định công ty" key="3">
-          <h3 className="text-xl font-semibold mb-2">Nội quy & Chính sách nội bộ</h3>
+          <h3 className="text-xl font-semibold mb-2">Nội quy & Chính sách </h3>
           <p>- Nhân viên phải tuân thủ nội quy làm việc, bảo vệ bí mật kinh doanh.Nhằm đảm bảo môi trường làm việc chuyên nghiệp, hiệu quả và bảo vệ các lợi ích kinh doanh, tất cả nhân viên phải tuân thủ nội quy làm việc và bảo vệ bí mật kinh doanh của công ty.
 
               1. Tuân thủ nội quy làm việc
