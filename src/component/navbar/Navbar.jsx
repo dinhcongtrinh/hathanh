@@ -70,7 +70,7 @@ const Navbar = () => {
   return (
     <nav
       className={`navbar navbar-expand-lg w-100 ${showNavbar ? 'show' : 'hide'}`}
-      style={{ backgroundColor: 'rgb(172 233 165)', transition: 'top 0.3s' }}
+      style={{ backgroundColor: '#ffffffff', transition: 'top 0.3s' }}
     >
       <div className="container">
         <Link className="navbar-brand" to="/Home" onClick={closeMenu}>
@@ -168,8 +168,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/RegistrationForm">
-                Đăng ký
+              <Link className="nav-link" to="/companypolicy">
+                Hỗ Trợ
               </Link>
             </li>
             <li className="nav-item">

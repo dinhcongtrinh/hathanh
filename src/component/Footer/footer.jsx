@@ -13,7 +13,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="footer-container">
+    <footer className="footercontainer">
       <div className="container-fluid"> {/* Bootstrap container */}
         <div className="footer-content row d-flex flex-wrap"> {/* Responsive Bootstrap row */}
           

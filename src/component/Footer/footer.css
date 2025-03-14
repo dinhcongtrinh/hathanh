@@ -1,5 +1,5 @@
 footer {
-  width: 100%;  /* Đảm bảo footer rộng 100% màn hình */
+  width: 100% !important ;/* Đảm bảo footer rộng 100% màn hình */
   background-color: #eff4dd;
   color: white;
   padding: 20px 0;
@@ -14,7 +14,7 @@ footer {
 }
 
 
-.footer-container {
+.footercontainer {
   width: 100% !important;  /* Mở rộng toàn bộ chiều rộng */
   max-width: none;  /* Không giới hạn chiều rộng */
   padding: 1rem;
