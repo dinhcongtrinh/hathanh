@@ -10,12 +10,12 @@ const ProjectsSection = () => {
           {/* Danh mục dự án */}
           <div className="col-md-6">
             <h4>Danh mục dự án</h4>
-            <p>Trưng bày các dự án đã thực hiện, kèm theo hình ảnh, báo cáo và kết quả đạt được.</p>
+            <p style={{ color: "#666" }}>Trưng bày các dự án đã thực hiện, kèm theo hình ảnh, báo cáo và kết quả đạt được.</p>
           </div>
           {/* Case Studies */}
           <div className="col-md-6">
             <h4>Case Studies</h4>
-            <p>Các bài học kinh nghiệm và minh họa chi tiết về quy trình thực hiện dự án.</p>
+            <p style={{ color: "#666" }}>Các bài học kinh nghiệm và minh họa chi tiết về quy trình thực hiện dự án.</p>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Tabs } from "antd";
+// 
 
 const { TabPane } = Tabs;
 
@@ -10,33 +11,33 @@ const CompanyPolicy = () => {
       <Tabs defaultActiveKey="1" centered>
         
         {/* Chính sách với khách hàng */}
-        <TabPane tab="Chính sách với khách hàng" key="1">
+        <TabPane tab={<span className="text-lg font-semibold">Chính sách với khách hàng</span>} key="1">
           <h3 className="text-xl font-semibold mb-2">Quyền lợi & Nghĩa vụ</h3>
-          <p>- Khách hàng được hưởng đầy đủ quyền lợi bảo hành, đổi trả theo quy định.Khách hàng có thể đổi trả sản phẩm trong vòng 7 ngày nếu có lỗi từ nhà sản xuất.
+          <p style={{ color: "#666" }}>- Khách hàng được hưởng đầy đủ quyền lợi bảo hành, đổi trả theo quy định.Khách hàng có thể đổi trả sản phẩm trong vòng 7 ngày nếu có lỗi từ nhà sản xuất.
 
               Điều kiện đổi trả: Sản phẩm còn nguyên vẹn, không bị hư hỏng do lỗi người sử dụng.</p>
-          <p>Chính sách đổi trả
+          <p style={{ color: "#666" }}>Chính sách đổi trả
 
 
              Điều kiện đổi trả: Sản phẩm còn nguyên vẹn, không bị hư hỏng do lỗi người sử dụng.</p>   
-           <p> Chính sách hỗ trợ kỹ thuật
+           <p style={{ color: "#666" }}> Chính sách hỗ trợ kỹ thuật
 
             Chúng tôi cung cấp dịch vụ tư vấn, cài đặt và hướng dẫn sử dụng sản phẩm miễn phí.
 
             Hỗ trợ kỹ thuật 24/7 qua điện thoại, email hoặc trực tiếp tại trung tâm dịch vụ.</p> 
-          <p>Chính sách giá cả
+          <p style={{ color: "#666" }}>Chính sách giá cả
 
            Cam kết giá cả cạnh tranh, phù hợp với chất lượng sản phẩm.
 
            Có chính sách ưu đãi cho khách hàng mua số lượng lớn hoặc ký hợp đồng dài hạn</p>
-          <p> Đảm bảo dịch vụ theo yêu cầu khách hàng
+          <p style={{ color: "#666" }}> Đảm bảo dịch vụ theo yêu cầu khách hàng
 
           Chúng tôi cung cấp dịch vụ tùy chỉnh theo nhu cầu của từng khách hàng, đảm bảo sản phẩm và dịch vụ phù hợp với đặc thù hoạt động của doanh nghiệp.
 
           Hỗ trợ thiết kế, cài đặt, nâng cấp và tối ưu hóa phần mềm, thiết bị theo yêu cầu riêng.
 
           Cam kết đáp ứng nhanh chóng các yêu cầu sửa chữa, bảo trì và thay thế linh kiện khi cần thiết.</p>
-          <p>- Thông tin cá nhân của khách hàng được bảo mật và chỉ sử dụng cho mục đích hợp pháp.Mục đích thu thập thông tin cá nhân
+          <p style={{ color: "#666" }}>- Thông tin cá nhân của khách hàng được bảo mật và chỉ sử dụng cho mục đích hợp pháp.Mục đích thu thập thông tin cá nhân
           Chúng tôi thu thập thông tin cá nhân của khách hàng nhằm:
 
            Cung cấp các sản phẩm, dịch vụ và hỗ trợ khách hàng tốt nhất.
@@ -80,7 +81,7 @@ const CompanyPolicy = () => {
           Chúng tôi luôn nỗ lực bảo vệ dữ liệu cá nhân của khách hàng và cam kết chỉ sử dụng cho các mục đích hợp pháp nhằm mang đến trải nghiệm tốt nhất cho khách hàng.
           
           </p>
-          <p>- Khách hàng có trách nhiệm tuân thủ điều khoản sử dụng dịch vụ.Chúng tôi luôn nỗ lực cung cấp các dịch vụ chất lượng cao, an toàn và minh bạch. Để đảm bảo quyền lợi cho cả hai bên, khách hàng có trách nhiệm tuân thủ các điều khoản sử dụng dịch vụ như sau:
+          <p style={{ color: "#666" }}>- Khách hàng có trách nhiệm tuân thủ điều khoản sử dụng dịch vụ.Chúng tôi luôn nỗ lực cung cấp các dịch vụ chất lượng cao, an toàn và minh bạch. Để đảm bảo quyền lợi cho cả hai bên, khách hàng có trách nhiệm tuân thủ các điều khoản sử dụng dịch vụ như sau:
 
          1. Tuân thủ quy định và pháp luật
          
@@ -126,7 +127,7 @@ const CompanyPolicy = () => {
         {/* Chính sách với đối tác */}
         <TabPane tab="Chính sách với đối tác" key="2">
           <h3 className="text-xl font-semibold mb-2">Hợp tác & Trách nhiệm</h3>
-          <p>- Các đối tác phải tuân thủ các quy định về hợp tác và thanh toán theo hợp đồng.Chúng tôi luôn đề cao sự minh bạch và chuyên nghiệp trong quá trình hợp tác với các đối tác. Vì vậy, các đối tác có trách nhiệm tuân thủ các quy định về hợp tác và thanh toán theo hợp đồng nhằm đảm bảo quyền lợi của cả hai bên.
+          <p style={{ color: "#666" }}>- Các đối tác phải tuân thủ các quy định về hợp tác và thanh toán theo hợp đồng.Chúng tôi luôn đề cao sự minh bạch và chuyên nghiệp trong quá trình hợp tác với các đối tác. Vì vậy, các đối tác có trách nhiệm tuân thủ các quy định về hợp tác và thanh toán theo hợp đồng nhằm đảm bảo quyền lợi của cả hai bên.
 
             1. Tuân thủ các điều khoản hợp tác
             
@@ -157,7 +158,7 @@ const CompanyPolicy = () => {
             Nếu không đạt được thỏa thuận, tranh chấp sẽ được xử lý theo quy định pháp luật hiện hành hoặc cơ chế giải quyết được ghi trong hợp đồng.
             
             Việc ký kết hợp đồng đồng nghĩa với việc các đối tác đã đọc, hiểu và cam kết tuân thủ đầy đủ các quy định trên. Chúng tôi luôn mong muốn xây dựng mối quan hệ hợp tác bền vững, dựa trên sự tin cậy và tôn trọng lẫn nhau.</p>
-                      <p>- Cam kết bảo mật thông tin kinh doanh giữa hai bên.Chúng tôi cam kết bảo mật tuyệt đối các thông tin kinh doanh trong quá trình hợp tác giữa hai bên. Việc thu thập, sử dụng và lưu trữ thông tin đều tuân thủ các quy định pháp luật nhằm đảm bảo lợi ích của cả hai phía.
+                      <p style={{ color: "#666" }}>- Cam kết bảo mật thông tin kinh doanh giữa hai bên.Chúng tôi cam kết bảo mật tuyệt đối các thông tin kinh doanh trong quá trình hợp tác giữa hai bên. Việc thu thập, sử dụng và lưu trữ thông tin đều tuân thủ các quy định pháp luật nhằm đảm bảo lợi ích của cả hai phía.
 
                    1. Phạm vi thông tin được bảo mật
                    
@@ -194,7 +195,7 @@ const CompanyPolicy = () => {
                    Việc ký kết hợp đồng hoặc thỏa thuận hợp tác đồng nghĩa với việc hai bên cam kết tuân thủ nghiêm ngặt các điều khoản bảo mật trên nhằm bảo vệ lợi ích chung và duy trì sự tin cậy trong quan hệ hợp tác.
                    
                    </p>
-                      <p>- Hợp tác đôi bên cùng có lợi dựa trên thỏa thuận hợp pháp.
+                      <p style={{ color: '#666' }}>- Hợp tác đôi bên cùng có lợi dựa trên thỏa thuận hợp pháp.
                       Hợp tác giữa các bên được xây dựng trên nguyên tắc minh bạch, công bằng và đảm bảo lợi ích chung. Mọi thỏa thuận đều tuân thủ pháp luật hiện hành, góp phần thúc đẩy sự phát triển bền vững và lâu dài.
 
                      1. Nguyên tắc hợp tác
