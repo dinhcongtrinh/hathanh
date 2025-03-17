@@ -1,6 +1,6 @@
 /* Đảm bảo section chiếm toàn bộ chiều rộng */
 #services {
-    background: linear-gradient(200deg, #599221, #4ce24c); /* Màu nền xanh đậm */
+    background: #ffffffff; /* Màu nền xanh đậm */
     padding: 60px 20px;
     text-align: center;
   }
@@ -22,7 +22,7 @@
   }
   
   #services .col-md-6 {
-    background: #395e091a; /* Nền trong suốt nhẹ */
+    background: #ffff; /* Nền trong suốt nhẹ */
     padding: 20px;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -31,7 +31,7 @@
   /* Hiệu ứng hover */
   #services .col-md-6:hover {
     transform: scale(1.05);
-    box-shadow: 0px 4px 10px rgba(255, 252, 252, 0.784);
+    box-shadow: 0px 4px 10px #ffffffff;
   }
   
   /* Danh sách dịch vụ */
@@ -40,11 +40,14 @@
     padding: 0;
   }
   
-  #services ul li {
+  #services h4, p, ul li {
     font-size: 1.1rem;
     padding: 8px 0;
+    color: #666;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
+
+ 
   
   #services ul li:last-child {
     border-bottom: none;

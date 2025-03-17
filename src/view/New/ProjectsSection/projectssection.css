@@ -12,16 +12,18 @@
     letter-spacing: 1.5px;
 }
 
+#projects h4, p {
+    color: #666;
+}
+
 #projects h4 {
     font-size: 1.75rem;
-    color: #f2fbf6;
     margin-bottom: 15px;
     font-weight: 600;
 }
 
 #projects p {
     font-size: 1rem;
-    color: #11d978;
     line-height: 1.6;
 }
 
@@ -34,7 +36,7 @@
 .col-md-6 {
     flex: 1 1 calc(50% - 10px);
     padding: 20px;
-    background-color: #90dd13;
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(75, 73, 73, 0.2);
     transition: all 0.3s ease;

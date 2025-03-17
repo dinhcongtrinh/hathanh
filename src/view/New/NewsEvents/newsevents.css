@@ -1,7 +1,7 @@
 /* CSS cho NewsEvents component */
 #news-events {
     padding: 50px 20px;
-    background-color: #abd776;
+    background-color: #ffffff;
     color: #d4e64e;
     text-align: center;
   }
@@ -42,7 +42,7 @@
   #news-events h4 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #ffc107;
+    color: #18671f;
   }
   
   #news-events p {
