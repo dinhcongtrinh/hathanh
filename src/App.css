@@ -41,5 +41,62 @@ body {
 @media (max-width: 480px) {
   .App {
     padding: 0 8px; /* Tạo khoảng cách nhỏ nhất */
+    padding: 0 12px; /* Tạo khoảng cách nhỏ hơn */
+
+  }
+ 
+}
+
+body {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* Máy tính bảng */
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Điện thoại */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
   }
 }

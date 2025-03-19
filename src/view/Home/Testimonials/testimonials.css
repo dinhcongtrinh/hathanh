@@ -42,9 +42,9 @@
   
   /* Responsive Design */
   @media (max-width: 768px) {
-    #testimonials h2 {
+    /* #testimonials h2 {
       font-size: 2rem;
-    }
+    } */
     .carousel-item blockquote {
       font-size: 1rem;
     }
