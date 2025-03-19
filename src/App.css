@@ -8,6 +8,28 @@ body {
   background-color: #ffffff; /* Màu nền tổng thể (khoảng trắng hai bên) */
 }
 
+h1 {
+  font-size: 2.5rem;
+  color: #666;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #666;
+}
+
+h3 {
+  color: #666;
+}
+h4 {
+  color: #666;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+}
+
 /* Khung nội dung chính (navbar, content, footer) */
 .App {
   /* max-width: 1200px; */
@@ -30,38 +52,10 @@ body {
   padding-right: 15px;
 }
 
-
-
-@media (max-width: 768px) {
-  .App {
-    padding: 0 12px; /* Tạo khoảng cách nhỏ hơn */
-  }
+a {
+  color: #666;
 }
 
-@media (max-width: 480px) {
-  .App {
-    padding: 0 8px; /* Tạo khoảng cách nhỏ nhất */
-    padding: 0 12px; /* Tạo khoảng cách nhỏ hơn */
-
-  }
- 
-}
-
-body {
-  font-size: 18px;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-p {
-  font-size: 1rem;
-}
 
 /* Máy tính bảng */
 @media screen and (max-width: 1024px) {
@@ -79,11 +73,23 @@ p {
 
   p {
     font-size: 0.95rem;
+    color: #666;
   }
+
+  a {
+    color: #666;
+  }
+  
 }
 
-/* Điện thoại */
-@media screen and (max-width: 768px) {
+
+@media (max-width: 768px) {
+  .App {
+    padding: 0 12px; /* Tạo khoảng cách nhỏ hơn */
+  }
+  a {
+    color: #666;
+  }
   body {
     font-size: 14px;
   }
@@ -97,6 +103,25 @@ p {
   }
 
   p {
+    color: #666;
     font-size: 0.9rem;
   }
+  
 }
+
+@media (max-width: 480px) {
+  .App {
+    padding: 0 8px; /* Tạo khoảng cách nhỏ nhất */
+    padding: 0 12px; /* Tạo khoảng cách nhỏ hơn */
+
+  }
+
+  a {
+    color: #666;
+  }
+  
+ 
+}
+
+
+

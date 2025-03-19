@@ -10,7 +10,7 @@ const Testimonials = () => {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <blockquote className="blockquote text-center">
-                <p className="mb-4">"Dịch vụ của công ty thực sự xuất sắc, đã giúp chúng tôi cải thiện hiệu quả công việc."</p>
+                <p className="mb-4"  style={{color:'#666'}}>"Dịch vụ của công ty thực sự xuất sắc, đã giúp chúng tôi cải thiện hiệu quả công việc."</p>
                 <footer className="blockquote-footer">
                 <span style={{ color: '#03300d' }}>Lê Như Cương</span>
                 </footer>
@@ -19,7 +19,7 @@ const Testimonials = () => {
             </div>
             <div className="carousel-item">
               <blockquote className="blockquote text-center">
-                <p className="mb-4">"Giải pháp của công ty mang lại sự khác biệt trong kinh doanh, chúng tôi rất hài lòng."</p>
+                <p className="mb-4"  style={{color:'#666'}}>"Giải pháp của công ty mang lại sự khác biệt trong kinh doanh, chúng tôi rất hài lòng."</p>
                 <footer className="blockquote-footer">
                 <span style={{ color: '#03300d' }}>Trần Lê Hải Yến</span>
                 </footer>
@@ -27,7 +27,7 @@ const Testimonials = () => {
             </div>
             <div className="carousel-item">
               <blockquote className="blockquote text-center">
-                <p className="mb-4">"Chất lượng dịch vụ và hỗ trợ khách hàng vượt trội, rất đáng tin cậy."</p>
+                <p className="mb-4" style={{color:'#666'}}>"Chất lượng dịch vụ và hỗ trợ khách hàng vượt trội, rất đáng tin cậy."</p>
                 <footer className="blockquote-footer">
                   <span style={{ color: '#03300d' }}>Nguyễn Văn Nam</span>
                 </footer>

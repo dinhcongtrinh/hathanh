@@ -40,8 +40,10 @@ align-items: center; /* Căn giữa nội dung theo chiều dọc */
   max-width: 450px; /* Giới hạn kích thước cột để tránh chiếm quá nhiều không gian */
 }
 
-.footercontainer h4, p {
-  color: #FFF;
+.footercontainer h4,
+.footercontainer p,
+.footercontainer a {
+  color: #FFF; 
 }
 
 .footer-column h5 {
