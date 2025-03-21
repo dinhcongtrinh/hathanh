@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
-import { Button, Form, Input, InputNumber, Card } from 'antd';
+import { Button, Form, Input, Card } from 'antd';
 import './contact.css';
 
 const validateMessages = {
-  required: '${label} là bắt buộc!',
+  required: (label) => `${label} là bắt buộc!`,
   types: {
-    email: '${label} không hợp lệ!',
-    number: '${label} phải là số!',
+    email: (label) => `${label} không hợp lệ!`,
+    number: (label) => `${label} phải là số!`,
   },
   number: {
-    range: '${label} phải nằm trong khoảng ${min} và ${max}',
+    range: (label, min, max) => `${label} phải nằm trong khoảng ${min} và ${max}`,
   },
 };
+
 
 const ContactForm = () => {
   const [isRegister, setIsRegister] = useState(false);

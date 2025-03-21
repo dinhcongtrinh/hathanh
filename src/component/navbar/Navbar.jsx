@@ -1,17 +1,16 @@
 import React, { useEffect, useState, useCallback, useRef } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Logo from '../../assets/imgs/HathanhLogo.png';
 import './navbar.css';
 
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null); // 'home' hoặc 'products'
+  const [activeDropdown, setActiveDropdown] = useState(null); 
   const [showNavbar, setShowNavbar] = useState(false);
   
-  // Sử dụng useRef để lưu trữ timeout ID cho việc ẩn dropdown
   const hideTimeout = useRef(null);
 
-  const navigate = useNavigate();
+ 
 
   const toggleNav = () => {
     setNavActive(!navActive);
@@ -46,10 +45,10 @@ const Navbar = () => {
     setShowNavbar(true);
   }, []);
 
-  const handleNavClick = (path) => {
-    navigate(path);
-    closeMenu();
-  };
+  // const handleNavClick = (path) => {
+  //   navigate(path);
+  //   closeMenu();
+  // };
 
   // Xử lý khi di chuột vào mục có dropdown, hủy timeout nếu có và hiển thị dropdown
   const handleMouseEnterDropdown = (menu) => {
@@ -128,6 +127,11 @@ const Navbar = () => {
                   <li>
                     <Link className="submenu-item" to="/home/economy">
                       Thúc Đẩy Kinh Tế
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="submenu-item" to="/home/economy">
+                      Thực trạng môi trường
                     </Link>
                   </li>
                 </ul>

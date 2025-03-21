@@ -100,7 +100,10 @@ body {
   background: #fff;
   list-style: none;
   padding: 10px 0;
-  min-width: 220px;
+  min-width: 460px;
+  display: block;
+  column-count: 2;
+  column-gap: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   opacity: 0 ;
   visibility: hidden ;
