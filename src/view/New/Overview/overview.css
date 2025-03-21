@@ -1,0 +1,66 @@
+/* CSS cho component Overview - giao diện mượt mà hơn */
+#overview {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  #overview .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  #overview h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #229107;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  #overview .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  #overview .col-md-4 {
+    flex: 0 0 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #overview .col-md-4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  #overview h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  #overview p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  /* Responsive cho màn hình nhỏ hơn */
+  @media (max-width: 768px) {
+    #overview .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  

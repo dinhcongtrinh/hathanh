@@ -1,0 +1,12 @@
+/* .home-bg {
+   
+   background: linear-gradient(200deg, #b3cf7e, #59914b);
+   min-height: 100vh; 
+ }
+  */
+
+  @media (max-width:480px) {
+    .home-bg {
+      padding: 0 10px;
+    }
+  }

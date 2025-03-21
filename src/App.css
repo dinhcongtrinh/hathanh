@@ -1,0 +1,127 @@
+/* Đảm bảo body chiếm toàn bộ màn hình và có khoảng trắng hai bên */
+body {
+  margin: 0;
+  padding: 0;
+  padding-top: 60px; /* Điều chỉnh theo chiều cao của navbar */
+  display: flex;
+  justify-content: center; /* Căn giữa nội dung chính */
+  background-color: #ffffff; /* Màu nền tổng thể (khoảng trắng hai bên) */
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #666;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #666;
+}
+
+h3 {
+  color: #666;
+}
+h4 {
+  color: #666;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Khung nội dung chính (navbar, content, footer) */
+.App {
+  /* max-width: 1200px; */
+  margin: auto;
+  width: 100%;       /* Đảm bảo không bị co nhỏ hơn màn hình nhỏ */
+  background-color: #ffffff; /* Màu nền của nội dung chính */
+  box-shadow: 0 0 10px rgba(166, 164, 164, 0.2); /* Tùy chọn: thêm đổ bóng nhẹ */
+  /* background: linear-gradient(200deg, #e6f0de, #60cd45); */
+}
+
+/* Khung nội dung chính */
+
+
+
+/* Lớp container dùng chung cho navbar, footer và content */
+.navbar .container, .content .container {
+  max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+  margin: 0 auto;    /* Căn giữa nội dung */
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a {
+  color: #666;
+}
+
+
+/* Máy tính bảng */
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+
+  a {
+    color: #666;
+  }
+  
+}
+
+
+@media (max-width: 768px) {
+  .App {
+    padding: 0 12px; /* Tạo khoảng cách nhỏ hơn */
+  }
+  a {
+    color: #666;
+  }
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 0 8px; /* Tạo khoảng cách nhỏ nhất */
+    padding: 0 12px; /* Tạo khoảng cách nhỏ hơn */
+
+  }
+
+  a {
+    color: #666;
+  }
+  
+ 
+}
+
+
+

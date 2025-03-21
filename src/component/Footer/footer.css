@@ -1,0 +1,102 @@
+footer {
+  width: 100% !important ;/* Đảm bảo footer rộng 100% màn hình */
+  background-color: #eff4dd;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+
+.footercontainer {
+  width: 100% !important;  /* Mở rộng toàn bộ chiều rộng */
+  max-width: none;  /* Không giới hạn chiều rộng */
+  padding: 1rem;
+  background-color: #29891d;
+  color: white;
+  min-height: 200px;
+}
+
+
+.footer-content {
+  /* max-width: 1200px !important; */
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center; /* Căn giữa nội dung theo chiều dọc */
+}
+
+
+
+.footer-column {
+  flex: 1;
+  min-width: 300px; /* Đảm bảo mỗi cột có kích thước tối thiểu */
+  max-width: 450px; /* Giới hạn kích thước cột để tránh chiếm quá nhiều không gian */
+}
+
+.footercontainer h4,
+.footercontainer p,
+.footercontainer a {
+  color: #FFF; 
+}
+
+.footer-column h5 {
+margin-bottom: 0.5rem;
+}
+
+.footer-bottom {
+text-align: center;
+margin-top: 1rem;
+}
+
+.footer-logo {
+width: 45px;
+height: 45px;
+}
+
+
+
+.footer-login-form {
+
+  background: rgba(255, 255, 255, 0.1); /* Nền nhẹ để phù hợp với footer */
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-login-form .ant-form-item {
+  margin-bottom: 10px; /* Giảm khoảng cách giữa các input */
+}
+
+.footer-login-form .ant-input {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.footer-login-form .ant-btn {
+ 
+  font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+.footer-content {
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-login-form {
+  max-width: 100%;
+}
+.footer-login-form .ant-btn {
+  font-size: 12px;
+  padding: 8px;
+}
+}
