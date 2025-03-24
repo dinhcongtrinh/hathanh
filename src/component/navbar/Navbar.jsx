@@ -106,7 +106,7 @@ const Navbar = () => {
                 <ul className="submenu">
                   <li>
                     <Link className="submenu-item" to="/overviewPage">
-                      Tổng Quan
+                      Con Người Với Môi Trường
                     </Link>
                   </li>
                   <li>
