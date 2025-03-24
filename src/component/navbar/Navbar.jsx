@@ -105,8 +105,8 @@ const Navbar = () => {
               {activeDropdown === 'home' && (
                 <ul className="submenu">
                   <li>
-                    <Link className="submenu-item" to="/home/overview">
-                      Tổng Quan
+                    <Link className="submenu-item" to="/overviewPage">
+                      Tổng Quan môi trường
                     </Link>
                   </li>
                   <li>
@@ -131,7 +131,7 @@ const Navbar = () => {
                   </li>
                   <li>
                     <Link className="submenu-item" to="/home/economy">
-                      Thực trạng môi trường
+                      Hà Thành Với Môi Trường
                     </Link>
                   </li>
                 </ul>

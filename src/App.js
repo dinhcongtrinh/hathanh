@@ -8,6 +8,8 @@ import New from './view/New/new';
 import Footer from './component/Footer/footer';
 import ContactPage from './view/Contact/contact.jsx';
 import CompanyPolicy from './view/Support/CompanyPolicy.jsx';
+//import menu trang chủ //
+import OverviewPage from './component/navbar/overview/OverviewPage.jsx';
 // import RegistrationForm from './view/ContactForm/RegistrationForm.jsx';  
 import '@fortawesome/fontawesome-free/css/all.min.css';
  
@@ -28,6 +30,7 @@ function App() {
             <Route path="/contactpage" element={<ContactPage />} />
             <Route path="/companypolicy" element={<CompanyPolicy />} />
             {/* <Route path="/registrationform" element={<RegistrationForm />} /> */}
+            <Route path='/overviewPage' element={<OverviewPage/>}/>
             <Route path="*" element={<Home />} />
           </Routes>
         </main>
