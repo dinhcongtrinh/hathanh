@@ -110,7 +110,7 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="submenu-item" to="/home/company">
+                    <Link className="submenu-item" to="/aboutCompany">
                       Giới Thiệu Công Ty
                     </Link>
                   </li>

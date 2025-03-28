@@ -4,8 +4,19 @@ body {
   padding: 0;
   padding-top: 60px; /* Điều chỉnh theo chiều cao của navbar */
   display: flex;
-  justify-content: center; /* Căn giữa nội dung chính */
-  background-color: #ffffff; /* Màu nền tổng thể (khoảng trắng hai bên) */
+  justify-content: center; 
+/* 
+  background-image: url('%PUBLIC_URL%/nen-web-csht.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh; */
+
 }
 
 h1 {
