@@ -1,7 +1,7 @@
 /* Phần CSS cho ProjectsSection */
 #projects {
     padding: 60px 0;
-    background-color: #ffffff; /* Màu nền nhẹ nhàng cho phần dự án */
+    background-color: #ffffff; 
   }
   
   #projects h2 {
@@ -65,7 +65,7 @@
 #projects .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  /* gap: 20px; */
 }
 
 #projects .col-md-4 {

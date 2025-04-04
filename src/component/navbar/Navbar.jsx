@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useCallback, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Logo from '../../assets/imgs/HathanhLogo.png';
 import './navbar.css';
 
@@ -9,6 +9,11 @@ const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   
   const hideTimeout = useRef(null);
+  
+  const Location = useLocation();
+  useEffect (() => {
+    closeMenu();
+  }, [ Location.pathname]);
 
  
 
@@ -105,32 +110,32 @@ const Navbar = () => {
               {activeDropdown === 'home' && (
                 <ul className="submenu">
                   <li>
-                    <Link className="submenu-item" to="/overviewPage">
+                    <Link className="submenu-item"  onClick={closeMenu}  to="/overviewPage">
                       Con Người Với Môi Trường
                     </Link>
                   </li>
                   <li>
-                    <Link className="submenu-item" to="/aboutCompany">
+                    <Link className="submenu-item"  onClick={closeMenu}  to="/aboutCompany">
                       Giới Thiệu Công Ty
                     </Link>
                   </li>
                   <li>
-                    <Link className="submenu-item" to="/home/leadership">
+                    <Link className="submenu-item"  onClick={closeMenu}  to="/home/leadership">
                       Ban Lãnh Đạo
                     </Link>
                   </li>
                   <li>
-                    <Link className="submenu-item" to="/home/social">
+                    <Link className="submenu-item"  onClick={closeMenu}  to="/home/social">
                       Trách Nhiệm Xã Hội
                     </Link>
                   </li>
                   <li>
-                    <Link className="submenu-item" to="/home/economy">
+                    <Link className="submenu-item"  onClick={closeMenu}  to="/home/economy">
                       Thúc Đẩy Kinh Tế
                     </Link>
                   </li>
                   <li>
-                    <Link className="submenu-item" to="/home/economy">
+                    <Link className="submenu-item"  onClick={closeMenu}  to="/home/economy">
                       Hà Thành với môi trường
                     </Link>
                   </li>
@@ -149,17 +154,17 @@ const Navbar = () => {
               {activeDropdown === 'products' && (
                 <ul className="submenu">
                   <li>
-                    <Link className="submenu-item" to="/products/office-equipment">
+                    <Link className="submenu-item"  onClick={closeMenu}  to="/products/office-equipment">
                       Thiết bị văn phòng
                     </Link>
                   </li>
                   <li>
-                    <Link className="submenu-item" to="/products/environment">
+                    <Link className="submenu-item"  onClick={closeMenu}  to="/products/environment">
                       Giải pháp 
                     </Link>
                   </li>
                   <li>
-                    <Link className="submenu-item" to="/products/technology">
+                    <Link className="submenu-item"  onClick={closeMenu}  to="/products/technology">
                       Phát triển công nghệ
                     </Link>
                   </li>

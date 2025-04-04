@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <footer className="footercontainer">
       <div className="container-fluid"> {/* Bootstrap container */}
-        <div className="footer-content row d-flex flex-wrap"> {/* Responsive Bootstrap row */}
+        <div className="footer-content row d-flex flex-wrap"> 
           
           <div className="footer-column col-12 col-md-4">
             <h5><HomeOutlined /> Công ty TNHH Phát triển Công nghệ Tài Nguyên và Môi Trường Hà Thành</h5>

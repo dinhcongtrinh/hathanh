@@ -36,8 +36,8 @@ align-items: center; /* Căn giữa nội dung theo chiều dọc */
 
 .footer-column {
   flex: 1;
-  min-width: 300px; /* Đảm bảo mỗi cột có kích thước tối thiểu */
-  max-width: 450px; /* Giới hạn kích thước cột để tránh chiếm quá nhiều không gian */
+  min-width: 300px; 
+  max-width: 450px; 
 }
 
 .footercontainer h4,
@@ -64,7 +64,7 @@ height: 45px;
 
 .footer-login-form {
 
-  background: rgba(255, 255, 255, 0.1); /* Nền nhẹ để phù hợp với footer */
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   display: flex;
   flex-direction: column;

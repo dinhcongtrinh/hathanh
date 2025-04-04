@@ -4,7 +4,6 @@ import './herosection.css';
 const HeroSection = () => {
   return (
     <section className="hero-section position-relative text-white">
-      {/* Overlay gradient */}
       <div className="hero-overlay"></div>
       <div className="container h-100">
         <div className="row h-100 align-items-center">

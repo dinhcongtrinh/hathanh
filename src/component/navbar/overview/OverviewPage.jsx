@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import "./OverviewPage.css"; // Import file CSS riêng
+import "./OverviewPage.css"; 
 
 const OverviewPage = () => {
   return (
@@ -23,7 +23,7 @@ const OverviewPage = () => {
         </p>
       </div>
 
-      {/* Thanh menu con */}
+
       <nav className="overview-menu">
         <ul>
           <li><Link to="/home/overview/general">Thực trạng môi trường</Link></li>

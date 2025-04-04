@@ -8,17 +8,40 @@ const validateMessages = {
     email: (label) => `${label} không hợp lệ!`,
     number: (label) => `${label} phải là số!`,
   },
-  number: {
+  number: {   
     range: (label, min, max) => `${label} phải nằm trong khoảng ${min} và ${max}`,
   },
 };
 
-
 const ContactForm = () => {
   const [isRegister, setIsRegister] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const onFinish = (values) => {
-    console.log('Dữ liệu:', values);
+  const onFinish = async (values) => {
+    console.log('Dữ liệu gửi đi:', values);
+    setLoading(true);
+
+    try {
+      const url = isRegister ? '/api/signup' : '/api/signin'; // Thay bằng API thực tế
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(values),
+      });
+
+      const result = await response.json();
+      setLoading(false);
+
+      if (response.ok) {
+        alert(isRegister ? 'Đăng ký thành công!' : 'Đăng nhập thành công!');
+      } else {
+        alert(result.msg || 'Có lỗi xảy ra!');
+      }
+    } catch (error) {
+      console.error(error);
+      alert('Lỗi kết nối đến máy chủ!');
+      setLoading(false);
+    }
   };
 
   return (
@@ -30,6 +53,7 @@ const ContactForm = () => {
           onFinish={onFinish}
           validateMessages={validateMessages}
           layout="vertical"
+          autoComplete="off"
         >
           {isRegister && (
             <Form.Item name="name" label="Họ và tên" rules={[{ required: true }]}>
@@ -41,7 +65,7 @@ const ContactForm = () => {
             <Input placeholder="Nhập email" />
           </Form.Item>
 
-          <Form.Item name="password" label="Mật khẩu" rules={[{ required: true }]}>
+          <Form.Item name="password" label="Mật khẩu" rules={[{ required: true, min: 6, message: 'Mật khẩu ít nhất 6 ký tự!' }]}>
             <Input.Password placeholder="Nhập mật khẩu" />
           </Form.Item>
 
@@ -67,7 +91,7 @@ const ContactForm = () => {
           )}
 
           <Form.Item>
-            <Button type="primary" htmlType="submit">
+            <Button type="primary" htmlType="submit" loading={loading} block>
               {isRegister ? 'Đăng ký' : 'Đăng nhập'}
             </Button>
           </Form.Item>

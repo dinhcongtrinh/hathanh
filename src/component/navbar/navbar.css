@@ -1,13 +1,11 @@
 /* Navbar.css */
 
-/* Nền của navbar với gradient và hiệu ứng giọt sương */
 html, body {
   overflow-x: hidden; /* Tránh tạo thanh cuộn ngang */
 }
 
 .navbar {
   position: fixed !important; 
-  /* height: 45px !important; */
   top: 0;
   left: 0;
   right: 0;
@@ -22,12 +20,9 @@ html, body {
   transform: translateY(0);
 }
 
-/* Tạo khoảng trống trên đầu trang để không bị navbar che mất nội dung */
 body {
   padding-top: 60px; /* Điều chỉnh theo chiều cao của navbar */
 }
-/* Kiểm tra phần tử cha */
-/*  */
 
 /* Pseudo-element tạo hiệu ứng giọt sương */
 .navbar::before {
@@ -47,16 +42,16 @@ body {
   max-width: 1200px !important;
   margin: 0 auto;
   display: flex;
-  justify-content: center; /* Căn giữa nội dung navbar */
+  justify-content: center; 
   align-items: center; 
 }
 
 /* Định dạng cho danh sách nav-item */
 .navbar-nav {
   display: flex;
-  justify-content: center; /* Căn giữa các mục navbar */
+  justify-content: center;
   align-items: center;
-  gap: 10px; /* Giảm khoảng cách giữa các mục */
+  gap: 10px; 
 }
 
 /* Định dạng cho nhãn thương hiệu */
@@ -67,10 +62,9 @@ body {
 
 /* Định dạng cho các mục trong navbar */
 .navbar-nav .nav-item {
-  margin-right: 0; /* Xóa margin phải để các mục nằm sát nhau hơn */
-  padding: 0 8px; /* Thay bằng padding nhỏ hơn cho khoảng cách đều nhau */
+  margin-right: 0; 
+  padding: 0 8px; 
 }
-/* Định dạng cho liên kết trong navbar */
 .navbar-nav .nav-link {
   font-size: 18px;
   color: #0f5017;
@@ -83,7 +77,6 @@ body {
   font-weight: bold; 
 }
 
-/* Đảm bảo container menu-item có vị trí relative */
 .navbar-nav .menu-item {
   margin: 0 0px;
   margin-bottom: 0 !important;
@@ -92,7 +85,6 @@ body {
 
 
 
-/* Dropdown submenu được đặt tuyệt đối */
 .submenu {
   position: absolute;
   top: 100% !important;
@@ -157,12 +149,12 @@ body {
   width: 35px;
   height: 35px;
   object-fit: contain; /* Giữ nguyên tỉ lệ */
-  filter: drop-shadow(2px 2px 5px rgba(202, 199, 199, 0.2)); /* Bóng nhẹ */
+  filter: drop-shadow(2px 2px 5px rgba(202, 199, 199, 0.2));
   transition: transform 0.3s ease-in-out; /* Hiệu ứng hover */
 }
 
 .logo-navbar:hover {
-  transform: scale(1.1); /* Phóng to nhẹ khi hover */
+  transform: scale(1.1); 
 }
 
 /* Định dạng cho dropdown-menu */
@@ -183,12 +175,12 @@ body {
 }
 .navbar-toggler {
   display: block !important;
-  border: 1px solid rgba(255, 255, 255, 0.5); /* Đường viền sáng nhẹ */
-  background-color: rgba(131, 246, 131, 0.8); /* Màu xanh non mờ ảo */
-  color: #ffffff; /* Màu icon bên trong */
-  border-radius: 8px; /* Bo góc nhẹ nhàng */
+  border: 1px solid rgba(255, 255, 255, 0.5); 
+  background-color: rgba(131, 246, 131, 0.8); 
+  color: #ffffff; 
+  border-radius: 8px; 
   transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng tinh tế */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .navbar-toggler:hover {
@@ -198,7 +190,7 @@ body {
 }
 
 .navbar-toggler-icon {
-  filter: invert(1); /* Đảo màu icon để dễ nhìn trên nền sáng */
+  filter: invert(1); 
 }
 
 /* Tìm kiếm */
@@ -206,60 +198,85 @@ body {
   border-radius: 20px;
   padding: 8px 16px;
   font-size: 16px;
-  color: #007bff; /* Font chữ màu xanh dương */
+  color: #007bff; 
 }
 
 .form-control:focus {
-  border-color: #28a745; /* Hiệu ứng viền màu xanh lá cây khi focus */
-  box-shadow: 0 0 8px rgba(208, 241, 216, 0.6); /* Độ bóng giọt sương màu xanh lá */
+  border-color: #28a745; 
+  box-shadow: 0 0 8px rgba(208, 241, 216, 0.6); 
 }
 
 .btn-outline-success  {
   color: #fff !important;
-  background-color: #28a745 !important; /* Nút tìm kiếm màu xanh lá cây */
+  background-color: #28a745 !important; 
   border-color: #28a745;
   transition: all 0.3s !important;
 }
 
 .btn-outline-success:hover {
   color: #fff;
-  background-color: #84ff00 !important; /* Nút chuyển màu cam khi hover */
+  background-color: #84ff00 !important; 
   border-color: #f2e67b !important;
-  box-shadow: 0 0 10px rgba(248, 248, 247, 0.788) !important; /* Độ bóng giọt sương màu cam khi hover */
+  box-shadow: 0 0 10px rgba(248, 248, 247, 0.788) !important;
 }
 
 /* Hiệu ứng font chữ màu xanh lá cây */
 .navbar-nav .nav-link.active {
-  color: #f0f5f1; /* Màu xanh lá cây khi đang active */
+  color: #f0f5f1; 
 }
 
 
 /* Responsive styles */
 @media (max-width: 768px) {
   .navbar .container {
-    max-width: 100%;
+    /* max-width: 100%;
     padding-left: 10px;
-    padding-right: 10px;
-  }
-}
+    padding-right: 10px; */
 
-@media (max-width: 480px) {
-  .navbar {
-    max-width: 100%;
-    padding-left: 5cap;
-    padding-right: 5px;
   }
   
 }
 
-@media (min-width: 1200px) {
-  .navbar .container {
-    max-width: 1140px;
+@media (max-width: 480px) {
+  .submenu {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    width: 240%;
+    min-width: unset; 
+    column-count: unset; 
+    top: 100%;
+    overflow-y: auto;
+    min-width: 100%;
+    z-index: 9999;
   }
+
+  .navbar-toggler {
+    display: block !important;
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    background-color: rgba(131, 246, 131, 0.8); 
+    color: #ffffff; 
+    border-radius: 8px; 
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  }
+  
+
+  .navbar-nav .nav-item {
+    margin-left: -100px !important;
+    padding: 0 8px;
 }
+}
+
+.nav-item  {
+text-align: left;
+}
+
 
 @media (min-width: 992px) {
   .navbar-toggler {
     display: none !important;
   }
 }
+
+

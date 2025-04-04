@@ -11,16 +11,8 @@ import CompanyPolicy from './view/Support/CompanyPolicy.jsx';
 // import RegistrationForm from './view/ContactForm/RegistrationForm.jsx';  
 import AboutCompany from './component/navbar/aboutcompany/AboutCompany.jsx';
 import OverviewPage from './component/navbar/overview/OverviewPage.jsx';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+// import '@fortawesome/fontawesome-free/css/all.min.css';
  
-
-
-
-
-
-
-
-
 function App() {
   useEffect(() => {
     document.body.style.backgroundImage = `url('/nen-web-csht.jpg')`;

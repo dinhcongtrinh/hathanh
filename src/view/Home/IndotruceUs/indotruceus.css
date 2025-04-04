@@ -5,8 +5,8 @@
   padding: 60px 0;
   background-color: #f8f9fa;
   color: #333;
-  margin-bottom: 40px; /* Tạo khoảng cách với component bên dưới */
-  margin-top: 40px;    /* Tạo khoảng cách với component bên trên */
+  margin-bottom: 40px; 
+  margin-top: 40px;    
 }
 
 #about h2 {
