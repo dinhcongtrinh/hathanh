@@ -34,7 +34,9 @@ const ProjectsSection = () => {
                 <div className="card-body">
                   <h5 className="card-title">{project.title}</h5>
                   <p className="card-text">{project.description}</p>
-                  <a href="#" className="btn btn-primary">Xem chi tiết</a>
+                  {/* <a href="/" className="btn btn-primary">Xem chi tiết</a> */}
+                  <a href="/" onClick={(e) => e.preventDefault()}>Xem chi tiết</a>
+
                 </div>
               </div>
             </div>
