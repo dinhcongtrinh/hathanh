@@ -171,6 +171,35 @@ const Navbar = () => {
                 </ul>
               )}
             </li>
+            <li 
+              className="nav-item dropdown menu-item"
+              onMouseEnter={() => handleMouseEnterDropdown('services')} 
+              onMouseLeave={handleMouseLeaveDropdown}
+            >
+              <Link className="nav-link" to="/services">
+                Dịch Vụ
+              </Link>
+              {activeDropdown === 'services' && (
+                <ul className="submenu">
+                  <li>
+                    <Link className="submenu-item" onClick={closeMenu} to="/services/land">
+                      Quản Lý Đất Đai
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="submenu-item" onClick={closeMenu} to="/services/environment">
+                      Giải pháp môi trường
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="submenu-item" onClick={closeMenu} to="/services/technology">
+                      Phát triển công nghệ
+                    </Link>
+                  </li>
+                </ul>
+              )}
+            </li>
+
             <li className="nav-item">
               <Link className="nav-link" to="/New">
                 Thông Tin
