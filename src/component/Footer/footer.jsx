@@ -20,8 +20,8 @@ const Footer = () => {
           <div className="footer-column col-12 col-md-4">
             <h5><HomeOutlined /> Công ty TNHH Phát triển Công nghệ Tài Nguyên và Môi Trường Hà Thành</h5>
             <p>Địa chỉ: Số 95 Đường Trung Văn, Phường Trung Văn, TP Hà Nội</p>
-            <p>Email: <a href="mailto:vp.hathanh08@gmail.com">vp.hathanh08@gmail.com</a></p>
-            <p>Điện thoại: <a href="tel:76543657654">76543657654</a></p>
+            <p>Email: <a href="mailto:vp.hathanh08@gmail.com">vp.hathanh08@gmail.info</a></p>
+            <p>Điện thoại: <a href="tel:76543657654">0975378866</a></p>
           </div>
 
           <div className="footer-column col-12 col-md-4">
